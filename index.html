@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duck hunter</title>
+
+  <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+
+<body>
+  <div id="scene">
+    <div id="controls">
+      <button onclick="startGame(event)">Start</button>
+      <div class="container">
+        <ul>
+          <li id="bullets">i</li>
+        </ul>
+        <p>shot</p>
+      </div>
+      <div class="container">
+        <div class="ducks_remaining">
+          <span>Hit</span>
+          <ul>
+            <li><img src="./src/images/duck_small.svg" alt="Duck" class="remaining_duck white-duck"></li>
+            <li><img src="./src/images/duck_small.svg" alt="Duck" class="remaining_duck white-duck"></li>
+            <li><img src="./src/images/duck_small.svg" alt="Duck" class="remaining_duck white-duck"></li>
+            <li><img src="./src/images/duck_small.svg" alt="Duck" class="remaining_duck white-duck"></li>
+            <li><img src="./src/images/duck_small.svg" alt="Duck" class="remaining_duck white-duck"></li>
+            <li><img src="./src/images/duck_small.svg" alt="Duck" class="remaining_duck white-duck"></li>
+            <li><img src="./src/images/duck_small.svg" alt="Duck" class="remaining_duck white-duck"></li>
+            <li><img src="./src/images/duck_small.svg" alt="Duck" class="remaining_duck white-duck"></li>
+            <li><img src="./src/images/duck_small.svg" alt="Duck" class="remaining_duck white-duck"></li>
+            <li><img src="./src/images/duck_small.svg" alt="Duck" class="remaining_duck white-duck"></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>I</li>
+          </ul>
+        </div>
+      </div>
+      <div class="score container">
+        <p id="points">0</p>
+        <p>score</p>
+      </div>
+    </div>
+  </div>
+  <script src="./src/js/nodes.js"></script>
+  <script src="./src/js/duck.js"></script>
+  <script src="./src/js/shotgun.js"></script>
+  <script src="./src/js/main.js"></script>
+</body>
+
+</html>
